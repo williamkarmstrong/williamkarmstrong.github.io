@@ -1,0 +1,131 @@
+/* Colours
+Pale Blue:     #007ea7
+Dark Blue:     #003459
+Midnight Blue: #00171f
+Off White:     #edf0f1
+ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Arial, serif;
+}
+
+header {
+    background-color: #007ea7;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 18px;
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #edf0f1;
+}
+
+nav a:hover {
+    background-color: #003459;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#profile {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+#about aside {
+    padding: 50px 0 0 20px;
+    width: 400px;
+    min-width: 300px;
+    text-align: justify;
+}
+
+#about h1 {
+    font-size: 30px;
+}
+
+#projects {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    background-color: #003459;
+    color: #edf0f1;
+}
+
+.proj {
+    padding: 20px;
+}
+
+.project-heading {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.project-text {
+    max-width: 500px;
+}
+
+#about video {
+    padding: 10px;
+}
+
+#gameplay {
+    width: 500px;
+    height: auto;
+}
+
+#channel {
+    width: 900px;
+    height: auto;
+    padding: 0 30px;
+}
+
+#youtube {
+    margin-top: 70px;
+    display: flex;
+}
+
+#youtube aside {
+    background-color: #007ea7;
+    color: #edf0f1;
+    padding: 20px;
+    width: 400px;
+    border-radius: 5%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#youtube aside:hover {
+    background-color: #003459;
+}
+
+footer {
+    margin-top: 100px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #003459;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+    padding: 5px;
+}
