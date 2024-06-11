@@ -92,7 +92,7 @@ nav a:hover {
 }
 
 #channel {
-    width: 900px;
+    width: 70%;
     height: auto;
     padding: 0 30px;
 }
@@ -106,7 +106,7 @@ nav a:hover {
     background-color: #007ea7;
     color: #edf0f1;
     padding: 20px;
-    width: 400px;
+    width: 25%;
     border-radius: 5%;
     text-align: justify;
     font-size: 18px;
