@@ -14,13 +14,20 @@ Off White:     #edf0f1
 
 header {
     background-color: #007ea7;
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+}
+
+nav {
+    width: 100%
 }
 
 nav li {
-    list-style-type: none;
     display: inline-block;
+    padding: 10px 20px;
+    list-style-type: none;
     font-size: 18px;
-    padding: 20px;
 }
 
 nav a {
@@ -31,11 +38,45 @@ nav a {
 
 nav a:hover {
     background-color: #003459;
+    cursor: pointer;
 }
 
 .logo {
     font-size: 30px;
     font-weight: bolder;
+}
+
+#contactnav {
+    background-color: red;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+#contactnav:hover {
+    color: #003459;
+    cursor: pointer;
+}
+
+@media (max-width: 590px) {
+    header {
+        position: static;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        display: block;
+    }
+
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
 }
 
 #profile {
@@ -44,16 +85,20 @@ nav a:hover {
     border-radius: 50%;
 }
 
-#about {
+.profile-image {
+    width: 50%;
     display: flex;
     justify-content: center;
-    padding: 50px;
+    align-items: center;
+}
+
+.profile-text {
+    width: 50%;
 }
 
 #about aside {
-    padding: 50px 0 0 20px;
-    width: 400px;
-    min-width: 300px;
+    padding: 50px 20px;
+    max-width: 500px;
     text-align: justify;
 }
 
@@ -61,16 +106,32 @@ nav a:hover {
     font-size: 30px;
 }
 
+@media (max-width: 840px) {
+    #about {
+        display: block;
+    }
+
+    .profile-image, .profile-text {
+        width: 100%;
+    }
+
+    #about aside {
+        max-width: 100%;
+    }
+}
+
 #projects {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 15px;
+    width: 100vw;
+    height: 800px;
     background-color: #003459;
     color: #edf0f1;
 }
 
 .proj {
+    background-color: #003459;
     padding: 20px;
+    float: left;
+    width: 50%;
 }
 
 .project-heading {
@@ -78,46 +139,65 @@ nav a:hover {
     text-align: center;
 }
 
-.project-text {
-    max-width: 500px;
-}
-
-#about video {
-    padding: 10px;
+.project-text, #about video {
+    padding: 10px
 }
 
 #gameplay {
-    width: 500px;
+    width: 100%;
     height: auto;
-}
-
-#channel {
-    width: 70%;
-    height: auto;
-    padding: 0 30px;
 }
 
 #youtube {
-    margin-top: 70px;
+    width: 100vw;
     display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0;
 }
 
-#youtube aside {
-    background-color: #007ea7;
-    color: #edf0f1;
-    padding: 20px;
+.yt-div {
     width: 25%;
-    border-radius: 5%;
-    text-align: justify;
-    font-size: 18px;
+    border: 3px solid #003459;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#youtube aside:hover {
+.yt-div:hover {
     background-color: #003459;
+    color: white;
+}
+
+.yt-pic {
+    width: 300px;
+    height: auto;
+}
+
+.yt-text {
+    text-align: justify;
+    padding-top: 20px;
+}
+
+#logo {
+    border-radius: 50%;
+    width: 200px;
+}
+
+@media (max-width: 1200px) {
+    #youtube {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .yt-div {
+        width: 450px;
+        margin: 50px;
+    }
 }
 
 footer {
-    margin-top: 100px;
     padding: 50px;
     display: flex;
     justify-content: center;
