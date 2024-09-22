@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>William Armstrong</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.png">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a id="about-link" href="#about">ABOUT</a></li>
+            <li><a class="proj-contact-links" href="#projects">PROJECTS</a></li>
+            <li><a class="proj-contact-links" href="#contact">CONTACT</a></li>
+        </ul>
+    </header>
+
+    <div id="about">
+        <div id="left">
+            <h1 id="name">William Armstrong</h1>
+            <p>
+                I am a hardworking and enthusiastic 2nd year student studying Electronics
+                and Software Engineering at the University of Glasgow. I have developed a
+                keen interest in exploring low-level computing topics with a particular
+                focus on digital electronics, computer systems, and embedded systems. </p>
+
+            <p> In addition
+                to my interest in low-level systems, I have been teaching myself web development,
+                having successfully completed projects that showcase my skills in front-end and
+                full-stack development.
+            </p>
+        </div>
+
+        <div id="right">
+            <img id="profile" src="resources/william.jpg" alt="Profile picture">
+        </div>
+    </div>
+
+    <div id="projects">
+        <div id="microcontroller" class="proj">
+            <div class="proj-content">
+                <img src="resources/microcontroller.jpg" alt="Nucleo-L432KC microcontroller">
+
+                <div class="proj-text">
+                    <h2>Nucleo-L432KC Microcontroller Programming</h2><br>
+                    <h4>Technologies: C++, Mbed</h4><br>
+                    <p id="microcontroller-blurb">
+                        Various projects include writing voltage data to an LCD display,
+                        generating pulse width modulated signals, and using a FET to drive an LED strip.
+                    </p><br>
+                    <button id="microcontroller-btn" type="submit">Read more</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="tracker" class="proj">
+            <div class="proj-content">
+                <div class="proj-text">
+                    <h2>Full Stack Asset Management Web App.</h2><br>
+                    <h4>Technologies: Node.js, Express, MongoDB, EJS, HTML, CSS</h4><br>
+                    <p id="tracker-blurb">
+                        Developed an application allowing users to create a portfolio of stocks,
+                        funds and cryptocurrencies using the Alpha Vantage API to fetch real-time
+                        stock and cryptocurrency prices. Presents assets in table and pie chart
+                        format using Chart.js.
+                    </p><br>
+                    <form>
+                        <button id="tracker-btn" type="submit">Read more</button>
+                    </form>
+                </div>
+                <img src="resources/tracker.png" alt="Investment tracker app">
+            </div>
+        </div>
+
+        <div id="memory-squares" class="proj">
+            <div class="proj-content">
+                <img src="resources/memorySquaresPic.png" alt="Memory game">
+                <div class="proj-text">
+                    <h2>Memory Game</h2><br>
+                    <h4>Technologies: C++, SFML</h4><br>
+                    <p id="memory-squares-blurb">
+                        Created an interactive memory game where users recall and input a sequence of
+                        squares. I integrated a GUI using the SFML library.
+                    </p><br>
+                    <form>
+                        <button id="msquares-btn" type="submit">Read more</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio" class="proj">
+            <div class="proj-content">
+                <div class="proj-text">
+                    <h2>Personal Portfolio Website</h2><br>
+                    <h4>Technologies: HTML, CSS, JavaScript</h4><br>
+                    <p id="portfolio-blurb">
+                        Designed and implemented a personal portfolio website showcasing projects,
+                        skills and contact information. Utilised media queries to ensure a fully
+                        responsive design, adapting to various screen sizes and devices.
+                    </p><br>
+                    <button id="portfolio-btn">Read more</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="contact">
+        <h2>Let's connect!</h2>
+        <div>
+            <a target=”_blank” href="https://linkedin.com/in/william-armstrong-43b05b1b5"><img src="resources/linkedin.png" alt="LinkedIn"></a>
+            <a target=”_blank” href="https://github.com/williamkarmstrong"><img src="resources/github.png" alt="GitHub"></a>
+            <a target=”_blank” href="mailto:williamkarmstrongyt@gmail.com"><img src="resources/gmail.png" alt="Gmail"></a>
+        </div>
+        <p><strong>&copy; 2024 William Armstrong</strong></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
